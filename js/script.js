@@ -19,108 +19,87 @@ project 1 - A Random Quote Generator
 const quotations = [
   {
     quote : "It’s none of their business that you have to learn to write. Let them think you were born that way.",
-    author: "– Ernest Hemingway",
-    year: " "
+    source: "– Ernest Hemingway",
   },
   {
     quote : "If you can tell stories, create characters, devise incidents, and have sincerity and passion, it doesn’t matter a damn how you write.",
-    author: "– Somerset Maugham",
-    year: " "
+    source: "– Somerset Maugham",
   },
   {
     quote : "To produce a mighty book, you must choose a mighty theme.",
-    author: "– Herman Melville",
-    year: " "
+    source: "– Herman Melville",
   },
   {
     quote : "It took me fifteen years to discover I had no talent for writing, but I couldn’t give it up because by that time I was too famous.",
-    author: "– Robert Benchley",
-    year: " "
+    source: "– Robert Benchley",
   },
   {
     quote : "If you have other things in your life—family, friends, good productive day work—these can interact with your writing and the sum will be all the richer.",
-    author: "– David Brin",
-    year: " "
+    source: "– David Brin",
   },
   {
     quote : "Life is what happens to you while you’re busy making other plans.",
-    author: "–John Lennon",
-    year: " "
+    source: "–John Lennon",
   },
   {
     quote : "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails.  Explore, Dream, Discover.",
-    author: "–Mark Twain",
-    year: " "
+    source: "–Mark Twain",
   },
   {
     quote : "The most common way people give up their power is by thinking they don’t have any.",
-    author: "–Alice Walker",
-    year: " "
+    source: "–Alice Walker",
   },
   {
     quote : "The mind is everything. What you think you become.",
-    author: "–Buddha",
-    year: " "
+    source: "–Buddha",
   },
   {
     quote : "The best time to plant a tree was 20 years ago. The second best time is now. –Chinese Proverb",
-    author: "–Chinese Proverb",
-    year: " "
+    source: "–Chinese Proverb",
   },
   {
     quote : "An unexamined life is not worth living.",
-    author: "–Socrates",
-    year: " "
+    source: "–Socrates",
   },
   {
     quote : "Your time is limited, so don’t waste it living someone else’s life.",
-    author: "–Steve Jobs",
-    year: " "
+    source: "–Steve Jobs",
   },
   {
     quote : "I am not a product of my circumstances. I am a product of my decisions.",
-    author: "–Stephen Covey",
-    year: " "
+    source: "–Stephen Covey",
   },
   {
     quote : "I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
-    author: "–Maya Angelou",
-    year: " "
+    source: "–Maya Angelou",
   },
   {
     quote : "Either you run the day, or the day runs you.",
-    author: "–Jim Rohn",
-    year: " "
+    source: "–Jim Rohn",
   },
   {
     quote : "The two most important days in your life are the day you are born and the day you find out why.",
-    author: "–Mark Twain",
-    year: " "
+    source: "–Mark Twain",
   },
   {
     quote : "Everything you’ve ever wanted is on the other side of fear.",
-    author: "–George Addair",
-    year: " "
+    source: "–George Addair",
   },
   {
     quote : "Believe you can and you’re halfway there.",
-    author: "–Theodore Roosevelt",
-    year: " "
+    source: "–Theodore Roosevelt",
   },
   {
     quote : "Teach thy tongue to say, \"I do not know,\" and thous shalt progress.",
-    author: "–Maimonides",
-    year: " "
+    source: "–Maimonides",
   },
   {
     quote : "Happiness is not something readymade.  It comes from your own actions.",
-    author: "–Dalai Lama",
-    year: " "
+    source: "–Dalai Lama",
   },
   {
     quote : "First, have a definite, clear practical ideal; a goal, an objective. Second, have the necessary means to achieve your ends; wisdom, money, materials, and methods. Third, adjust all your means to that end.",
-    author: "–Aristotle",
-    year: " "
+    source: "–Aristotle",
   }
 ]
 
