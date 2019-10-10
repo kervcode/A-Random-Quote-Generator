@@ -15,6 +15,114 @@ project 1 - A Random Quote Generator
   Use console.log() to log your array of quotes to the console.
 ***/
 
+// Step 1: build a collection of quotations
+const quotations = [
+  {
+    quote : "It’s none of their business that you have to learn to write. Let them think you were born that way.",
+    author: "– Ernest Hemingway",
+    year: " "
+  },
+  {
+    quote : "If you can tell stories, create characters, devise incidents, and have sincerity and passion, it doesn’t matter a damn how you write.",
+    author: "– Somerset Maugham",
+    year: " "
+  },
+  {
+    quote : "To produce a mighty book, you must choose a mighty theme.",
+    author: "– Herman Melville",
+    year: " "
+  },
+  {
+    quote : "It took me fifteen years to discover I had no talent for writing, but I couldn’t give it up because by that time I was too famous.",
+    author: "– Robert Benchley",
+    year: " "
+  },
+  {
+    quote : "If you have other things in your life—family, friends, good productive day work—these can interact with your writing and the sum will be all the richer.",
+    author: "– David Brin",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  },
+  {
+    quote : " ",
+    author: " ",
+    year: " "
+  }
+]
 
 
 
