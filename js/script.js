@@ -43,83 +43,83 @@ const quotations = [
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "Life is what happens to you while you’re busy making other plans.",
+    author: "–John Lennon",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails.  Explore, Dream, Discover.",
+    author: "–Mark Twain",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "The most common way people give up their power is by thinking they don’t have any.",
+    author: "–Alice Walker",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "The mind is everything. What you think you become.",
+    author: "–Buddha",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "The best time to plant a tree was 20 years ago. The second best time is now. –Chinese Proverb",
+    author: "–Chinese Proverb",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "An unexamined life is not worth living.",
+    author: "–Socrates",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "Your time is limited, so don’t waste it living someone else’s life.",
+    author: "–Steve Jobs",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "I am not a product of my circumstances. I am a product of my decisions.",
+    author: "–Stephen Covey",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+    author: "–Maya Angelou",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "Either you run the day, or the day runs you.",
+    author: "–Jim Rohn",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "The two most important days in your life are the day you are born and the day you find out why.",
+    author: "–Mark Twain",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "Everything you’ve ever wanted is on the other side of fear.",
+    author: "–George Addair",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "Believe you can and you’re halfway there.",
+    author: "–Theodore Roosevelt",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "Teach thy tongue to say, \"I do not know,\" and thous shalt progress.",
+    author: "–Maimonides",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "Happiness is not something readymade.  It comes from your own actions.",
+    author: "–Dalai Lama",
     year: " "
   },
   {
-    quote : " ",
-    author: " ",
+    quote : "First, have a definite, clear practical ideal; a goal, an objective. Second, have the necessary means to achieve your ends; wisdom, money, materials, and methods. Third, adjust all your means to that end.",
+    author: "–Aristotle",
     year: " "
   }
 ]
