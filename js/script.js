@@ -16,7 +16,7 @@ project 1 - A Random Quote Generator
 ***/
 
 // Step 1: build a collection of quotations
-const quotations = [
+const quotes = [
   {
     quote : "It’s none of their business that you have to learn to write. Let them think you were born that way.",
     source: "– Ernest Hemingway",
@@ -103,16 +103,23 @@ const quotations = [
   }
 ]
 
-
-
 /***
   Create the `getRandomQuote` function to:
    - Create a variable to store a random number 
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
 
+// create getRandomQuote function
+function getRandomQuote(){
+  // set variable to store random number
+    var randomNumber;
+  // random number needs to be between array length interval
+    randomNumber = Math.floor(Math.random() * quotes.length + 1);
+  // return random number
+  return randomNumber;
+}
 
-
+console.log(getRandomQuote());
 
 /***
   Create the `printQuote` function to: 
@@ -130,6 +137,7 @@ const quotations = [
 
 
 
+
 /***
   When the "Show another quote" button is clicked, the event listener 
   below will be triggered, and it will call, or "invoke", the `printQuote` 
@@ -137,7 +145,7 @@ const quotations = [
   comment.
 ***/
 
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+// document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
