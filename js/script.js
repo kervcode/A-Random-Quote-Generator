@@ -34,6 +34,11 @@ const quotes = [
     source: "– Robert Benchley"
   },
   {
+    quote : "Tell your men they work for me now, this is my city!",
+    source : "The Dark Knight",
+    year: 2008
+  },
+  {
     quote : "If you have other things in your life—family, friends, good productive day work—these can interact with your writing and the sum will be all the richer.",
     source: "– David Brin"
   },
@@ -48,6 +53,10 @@ const quotes = [
   {
     quote : "The mind is everything. What you think you become.",
     source: "– Buddha"
+  },{
+    quote : "Momma always said life was like a box of chocolates. You never know what you're gonna get.",
+    source: "Forrest Gump",
+    year: 1994
   },
   {
     quote : "The best time to plant a tree was 20 years ago. The second best time is now. –Chinese Proverb",
@@ -134,7 +143,11 @@ function printQuote() {
   var randomQuote = '<p class="quote">' + quotes[storeRandomQuote].quote + '</p>';
   //assign source with quote array index equivalent to the random number
   var randomSource = '<p class="source">' + quotes[storeRandomQuote].source + '</p>';
-  
+  // check if quote is a citation
+      // if has property year: it is a citation
+          // format html variable to print citation
+      // else it is not citation
+          // format htmlvariable to print regular quote
   document.getElementsByClassName('quote').innerHTML = quotes[getRandomQuote()].source;
   document.getElementsByClassName('source').innerHTML = quotes[getRandomQuote()].source;
   
