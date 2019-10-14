@@ -19,90 +19,82 @@ project 1 - A Random Quote Generator
 const quotes = [
   {
     quote : "It’s none of their business that you have to learn to write. Let them think you were born that way.",
-    source: "– Ernest Hemingway",
+    source: "– Ernest Hemingway"
   },
   {
     quote : "If you can tell stories, create characters, devise incidents, and have sincerity and passion, it doesn’t matter a damn how you write.",
-    source: "– Somerset Maugham",
+    source: "– Somerset Maugham"
   },
   {
     quote : "To produce a mighty book, you must choose a mighty theme.",
-    source: "– Herman Melville",
+    source: "– Herman Melville"
   },
   {
     quote : "It took me fifteen years to discover I had no talent for writing, but I couldn’t give it up because by that time I was too famous.",
-    source: "– Robert Benchley",
+    source: "– Robert Benchley"
   },
   {
     quote : "If you have other things in your life—family, friends, good productive day work—these can interact with your writing and the sum will be all the richer.",
-    source: "– David Brin",
+    source: "– David Brin"
   },
   {
     quote : "Life is what happens to you while you’re busy making other plans.",
-    source: "–John Lennon",
-  },
-  {
-    quote : "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails.  Explore, Dream, Discover.",
-    source: "–Mark Twain",
+    source: "– John Lennon"
   },
   {
     quote : "The most common way people give up their power is by thinking they don’t have any.",
-    source: "–Alice Walker",
+    source: "– Alice Walker"
   },
   {
     quote : "The mind is everything. What you think you become.",
-    source: "–Buddha",
+    source: "– Buddha"
   },
   {
     quote : "The best time to plant a tree was 20 years ago. The second best time is now. –Chinese Proverb",
-    source: "–Chinese Proverb",
+    source: "– Chinese Proverb"
   },
   {
     quote : "An unexamined life is not worth living.",
-    source: "–Socrates",
+    source: "– Socrates"
   },
   {
     quote : "Your time is limited, so don’t waste it living someone else’s life.",
-    source: "–Steve Jobs",
+    source: "– Steve Jobs"
   },
   {
     quote : "I am not a product of my circumstances. I am a product of my decisions.",
-    source: "–Stephen Covey",
+    source: "– Stephen Covey"
   },
   {
     quote : "I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
-    source: "–Maya Angelou",
+    source: "– Maya Angelou"
   },
   {
     quote : "Either you run the day, or the day runs you.",
-    source: "–Jim Rohn",
+    source: "- Jim Rohn"
   },
   {
     quote : "The two most important days in your life are the day you are born and the day you find out why.",
-    source: "–Mark Twain",
+    source: "– Mark Twain"
   },
   {
     quote : "Everything you’ve ever wanted is on the other side of fear.",
-    source: "–George Addair",
+    source: "– George Addair"
   },
   {
     quote : "Believe you can and you’re halfway there.",
-    source: "–Theodore Roosevelt",
+    source: "– Theodore Roosevelt"
   },
   {
-    quote : "Teach thy tongue to say, \"I do not know,\" and thous shalt progress.",
-    source: "–Maimonides",
+    quote : 'Teach thy tongue to say, \"I do not know,\" and thous shalt progress.',
+    source: "– Maimonides"
   },
   {
     quote : "Happiness is not something readymade.  It comes from your own actions.",
-    source: "–Dalai Lama",
-  },
-  {
-    quote : "First, have a definite, clear practical ideal; a goal, an objective. Second, have the necessary means to achieve your ends; wisdom, money, materials, and methods. Third, adjust all your means to that end.",
-    source: "–Aristotle",
+    source: "– Dalai Lama"
   }
 ]
-
+console.log('Number of quotes: ' + quotes.length);
 /***
   Create the `getRandomQuote` function to:
    - Create a variable to store a random number 
@@ -114,12 +106,12 @@ function getRandomQuote(){
   // set variable to store random number
     var randomNumber;
   // random number needs to be between array length interval
-    randomNumber = Math.floor(Math.random() * quotes.length + 1);
+    randomNumber = Math.floor(Math.random() * quotes.length);
   // return random number
   return randomNumber;
 }
 
-console.log(getRandomQuote());
+
 
 /***
   Create the `printQuote` function to: 
@@ -134,9 +126,24 @@ console.log(getRandomQuote());
    - Set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
 
-
-
-
+// create printQuote function
+function printQuote() {
+  var storeRandomQuote = getRandomQuote(); //will the value to get the random quotes
+  var html = ''; //
+  //assign quote with quote array index equivalent to the random number
+  var randomQuote = '<p class="quote">' + quotes[storeRandomQuote].quote + '</p>';
+  //assign source with quote array index equivalent to the random number
+  var randomSource = '<p class="source">' + quotes[storeRandomQuote].source + '</p>';
+  
+  document.getElementsByClassName('quote').innerHTML = quotes[getRandomQuote()].source;
+  document.getElementsByClassName('source').innerHTML = quotes[getRandomQuote()].source;
+  
+  html += randomQuote + randomSource;
+  // get the dom value of the quote-box id and set its innerHTML with html variable created earlier
+  const quoteBox = document.getElementById('quote-box');
+  quoteBox.innerHTML = html;
+  console.log(getRandomQuote());
+}
 
 /***
   When the "Show another quote" button is clicked, the event listener 
@@ -145,7 +152,7 @@ console.log(getRandomQuote());
   comment.
 ***/
 
-// document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
