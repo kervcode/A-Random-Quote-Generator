@@ -1,9 +1,10 @@
 /******************************************
 Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
+Student: Kervintz Noel
 ******************************************/
 
-// Step 1: build a collection of quotations
+
 const quotes = [
   {
     quote : "It’s none of their business that you have to learn to write. Let them think you were born that way.",
@@ -92,13 +93,13 @@ const quotes = [
   }
 ]
 
-// create getRandomQuote function
+
 function getRandomQuote(){
-  // set variable to store random number
+  
     var randomNumber;
-  // random number needs to be between array length interval
+  
     randomNumber = Math.floor(Math.random() * quotes.length);
-  // return random number
+  
   return randomNumber;
 }
 
@@ -114,34 +115,31 @@ function randomBgColor() {
     return bgColor;
 } 
 
-// create printQuote function
+
 function printQuote() {
-  // call randomBgColor
+
   randomBgColor()
-  var storeRandomQuote = getRandomQuote(); //will the value to get the random quotes
-  var html = ''; //
+  var storeRandomQuote = getRandomQuote(); 
+  var html = ''; 
   ;
-  // check if quote is a citation 
-      // if has property year: it is a citation
+
         if(quotes[storeRandomQuote].year) {
-          //assign quote with quote array index equivalent to the random number
+          
           var randomQuote = '<p class="quote">' + quotes[storeRandomQuote].citation + '</p>';
-          //assign source with quote array index equivalent to the random number
+          
           var randomSource = '<p class="source">' + quotes[storeRandomQuote].source + '<span class="year">'+ quotes[storeRandomQuote].year + '</span></p>'
         } else {
-          //assign quote with quote array index equivalent to the random number
+        
           var randomQuote = '<p class="quote">' + quotes[storeRandomQuote].quote + '</p>';
-          //assign source with quote array index equivalent to the random number
+          
           var randomSource = '<p class="source">' + quotes[storeRandomQuote].source + '</p>'
         }
-          // format html variable to print citation
-      // else it is not citation
-          // format htmlvariable to print regular quote
+      
   document.getElementsByClassName('quote').innerHTML = quotes[getRandomQuote()].source;
   document.getElementsByClassName('source').innerHTML = quotes[getRandomQuote()].source;
   
   html += randomQuote + randomSource;
-  // get the dom value of the quote-box id and set its innerHTML with html variable created earlier
+  
   const quoteBox = document.getElementById('quote-box');
   quoteBox.innerHTML = html;
   console.log(getRandomQuote());
