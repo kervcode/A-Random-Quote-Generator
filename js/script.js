@@ -22,7 +22,7 @@ const quotes = [
     source: " Robert Benchley"
   },
   {
-    quote : "Tell your men they work for me now, this is my city!",
+    citation : "Tell your men they work for me now, this is my city!",
     source : " The Dark Knight",
     year: 2008
   },
@@ -42,7 +42,7 @@ const quotes = [
     quote : "The mind is everything. What you think you become.",
     source: " Buddha"
   },{
-    quote : "Momma always said life was like a box of chocolates. You never know what you're gonna get.",
+    citation : "Momma always said life was like a box of chocolates. You never know what you're gonna get.",
     source: " Forrest Gump",
     year: 1994
   },
@@ -125,7 +125,7 @@ function printQuote() {
       // if has property year: it is a citation
         if(quotes[storeRandomQuote].year) {
           //assign quote with quote array index equivalent to the random number
-          var randomQuote = '<p class="quote">' + quotes[storeRandomQuote].quote + '</p>';
+          var randomQuote = '<p class="quote">' + quotes[storeRandomQuote].citation + '</p>';
           //assign source with quote array index equivalent to the random number
           var randomSource = '<p class="source">' + quotes[storeRandomQuote].source + '<span class="year">'+ quotes[storeRandomQuote].year + '</span></p>'
         } else {
