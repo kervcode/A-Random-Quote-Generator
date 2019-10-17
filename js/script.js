@@ -121,7 +121,6 @@ function printQuote() {
   randomBgColor()
   var storeRandomQuote = getRandomQuote(); 
   var html = ''; 
-  ;
 
         if(quotes[storeRandomQuote].year) {
           
@@ -142,7 +141,6 @@ function printQuote() {
   
   const quoteBox = document.getElementById('quote-box');
   quoteBox.innerHTML = html;
-  console.log(getRandomQuote());
 }
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
