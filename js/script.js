@@ -7,33 +7,21 @@ Student: Kervintz Noel
 
 const quotes = [
   {
-    quote : "It’s none of their business that you have to learn to write. Let them think you were born that way.",
-    source: " Ernest Hemingway"
-  },
-  {
-    quote : "If you can tell stories, create characters, devise incidents, and have sincerity and passion, it doesn’t matter a damn how you write.",
-    source: " Somerset Maugham"
+    quote : "But man is not made for defeat,\" he said. \"A man can be destroyed but not defeated.",
+    source: " Ernest Hemingway",
+    citation: "The Old Man and the Sea",
+    year: 1952
   },
   {
     quote : "To produce a mighty book, you must choose a mighty theme.",
-    source: " Herman Melville"
-  },
-  {
-    quote : "It took me fifteen years to discover I had no talent for writing, but I couldn’t give it up because by that time I was too famous.",
-    source: " Robert Benchley"
+    source: " Herman Melville",
+    citation: "Moby Dick"
   },
   {
     citation : "Tell your men they work for me now, this is my city!",
-    source : " The Dark Knight",
+    source : " The Joker - Heath Ledger",
+    Citation: " The Dark Knight",
     year: 2008
-  },
-  {
-    quote : "If you have other things in your life—family, friends, good productive day work—these can interact with your writing and the sum will be all the richer.",
-    source: " David Brin"
-  },
-  {
-    quote : "Life is what happens to you while you’re busy making other plans.",
-    source: " John Lennon"
   },
   {
     quote : "The most common way people give up their power is by thinking they don’t have any.",
@@ -48,14 +36,6 @@ const quotes = [
     year: 1994
   },
   {
-    quote : "The best time to plant a tree was 20 years ago. The second best time is now. –Chinese Proverb",
-    source: " Chinese Proverb"
-  },
-  {
-    quote : "An unexamined life is not worth living.",
-    source: " Socrates"
-  },
-  {
     quote : "Your time is limited, so don’t waste it living someone else’s life.",
     source: " Steve Jobs"
   },
@@ -64,16 +44,12 @@ const quotes = [
     source: " Stephen Covey"
   },
   {
-    quote : "I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+    quote : " You may kill me with your hatefulness, But still, like air, I'll rise.",
     source: " Maya Angelou"
   },
   {
     quote : "Either you run the day, or the day runs you.",
     source: " Jim Rohn"
-  },
-  {
-    quote : "The two most important days in your life are the day you are born and the day you find out why.",
-    source: " Mark Twain"
   },
   {
     quote : "Everything you’ve ever wanted is on the other side of fear.",
@@ -84,7 +60,7 @@ const quotes = [
     source: " Theodore Roosevelt"
   },
   {
-    quote : 'Teach thy tongue to say, \"I do not know,\" and thous shalt progress.',
+    quote : 'Teach thy tongue to say, "I do not know," and thous shalt progress.',
     source: " Maimonides"
   },
   {
