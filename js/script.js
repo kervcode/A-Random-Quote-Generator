@@ -140,7 +140,7 @@ function printQuote() {
   html += randomQuote + randomSource;
   
   const quoteBox = document.getElementById('quote-box');
-  quoteBox.innerHTML = html;
+  quoteBox.innerHTML = html;        
 }
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
