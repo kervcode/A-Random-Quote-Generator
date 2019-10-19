@@ -127,5 +127,7 @@ function printQuote() {
   // console.log(html);
     return document.getElementById('quote-box').innerHTML = html;
 }
+  // change function with setInterval
+  setInterval(printQuote, 15000);
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
