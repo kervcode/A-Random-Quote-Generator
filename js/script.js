@@ -97,26 +97,7 @@ function printQuote() {
   randomBgColor()
   var storeRandomQuote = getRandomQuote(); 
   var html = ''; 
-
-        if(quotes[storeRandomQuote].year) {
-          
-          var randomQuote = '<p class="quote">' + quotes[storeRandomQuote].citation + '</p>';
-          
-          var randomSource = '<p class="source">' + quotes[storeRandomQuote].source + '<span class="year">'+ quotes[storeRandomQuote].year + '</span></p>'
-        } else {
-        
-          var randomQuote = '<p class="quote">' + quotes[storeRandomQuote].quote + '</p>';
-          
-          var randomSource = '<p class="source">' + quotes[storeRandomQuote].source + '</p>'
-        }
-      
-  document.getElementsByClassName('quote').innerHTML = quotes[getRandomQuote()].source;
-  document.getElementsByClassName('source').innerHTML = quotes[getRandomQuote()].source;
-  
-  html += randomQuote + randomSource;
-  
-  const quoteBox = document.getElementById('quote-box');
-  quoteBox.innerHTML = html;        
+ 
 }
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
