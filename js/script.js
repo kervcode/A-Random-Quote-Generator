@@ -97,7 +97,16 @@ function printQuote() {
   randomBgColor()
   var storeRandomQuote = getRandomQuote(); 
   var html = ''; 
- 
+      // concatenate html with quote and source - this will print for any array
+      // check which property exist in the object
+          // if citation and year exist
+              // concatenate HTML with property value for citation and year
+          // else if only citation
+              // concatenate HTML with property value for citation
+          // else if only year
+              // concatenate HTML with property value for year
+
+  // return html
 }
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
