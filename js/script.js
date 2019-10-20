@@ -77,9 +77,13 @@ function getRandomQuote(){
     var randomNumber;
   
     randomNumber = Math.floor(Math.random() * quotes.length);
+
+    console.log(quotes[randomNumber]);
   
-  return randomNumber;
+  return quotes[randomNumber];
 }
+
+getRandomQuote();
 
 function randomBgColor() {
   // source : https://stackoverflow.com/questions/1484506/random-color-generator
@@ -100,34 +104,26 @@ function printQuote() {
   var storeRandomQuote = getRandomQuote(); 
   var html = ''; 
       // concatenate html with quote and source - this will print for any array
-          html += '<p class="quote">'+ quotes[storeRandomQuote].quote + '</p>';
+          html += '<p class="quote">'+ storeRandomQuote.quote + '</p>';
       // check which property exist in the object
           // if citation and year exist
-              if (quotes[storeRandomQuote].citation && quotes[storeRandomQuote].year){
-                html += '<p class="source">' + 
-                              quotes[storeRandomQuote].source + 
-                        '<span class= "citation"> ' + 
-                              quotes[storeRandomQuote].citation + 
-                        '</span>' + 
-                        '<span class= "year"> ' + quotes[storeRandomQuote].year + '</span></p>';
-                console.log(html);
-                console.log(' ');
-                console.log(quotes[storeRandomQuote].citation);
-              }
+              if (storeRandomQuote.citation && storeRandomQuote.year){
+                html += '<p class="source">' + storeRandomQuote.source + '<span class= "citation"> ' + storeRandomQuote.citation + '</span>' + '<span class ="year"> ' + storeRandomQuote.year + '</span></p>';
+ 
+                console.log(storeRandomQuote);
+              }   else if (storeRandomQuote.citation) {
               // concatenate HTML with property value for citation and year
           // else if only citation
               // concatenate HTML with property value for citation
-              else if (quotes[storeRandomQuote].citation) {
-                html += '<p class="source">' + quotes[storeRandomQuote].source + '<span class= "citation">, ' + quotes[storeRandomQuote].citation + '</span></p>';
+            
+                html += '<p class="source">' + gstoreRandomQuote.source + '<span class= "citation">, ' + storeRandomQuote.citation + '</span></p>';
               } else
           // else if only year
               // concatenate HTML with property value for source
-                  html += '<p class="source">' + quotes[storeRandomQuote].source + '</p>';
-  // return html
-  // console.log(html);
+                  html += '<p class="source">' + storeRandomQuote.source + '</p>';
     return document.getElementById('quote-box').innerHTML = html;
 }
   // change function with setInterval
-  setInterval(printQuote, 15000);
+  // setInterval(printQuote, 15000);
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
