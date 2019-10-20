@@ -78,12 +78,11 @@ function getRandomQuote(){
   
     randomNumber = Math.floor(Math.random() * quotes.length);
 
-    console.log(quotes[randomNumber]);
+    // clear interval
+    // clearInterval(intervalId);
   
   return quotes[randomNumber];
 }
-
-getRandomQuote();
 
 function randomBgColor() {
   // source : https://stackoverflow.com/questions/1484506/random-color-generator
@@ -124,6 +123,6 @@ function printQuote() {
     return document.getElementById('quote-box').innerHTML = html;
 }
   // change function with setInterval
-  // setInterval(printQuote, 15000);
+  // const intervalId = setInterval(printQuote, 5000);
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
