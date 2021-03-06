@@ -2,21 +2,94 @@
  * Treehouse FSJS Techdegree
  * Random Quote Generator - CSS
  */
+h1 {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   background-color: #36b55c;
   color: white;
-  font-family: 'Playfair Display', serif;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  font-size: 24px;
+  width: 100vw;
+  /* height: 100px; */
+  /* background-color: #fff; */
+  padding: 40px;
+  text-decoration: underline;
 }
 
 #quote-box {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  right: 10%;
-  width: 80%;
-  line-height: .5;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  padding: 40px;
+  width: 600px;
+  font-size: 32px;
 }
+
+.source {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  align-self: flex-end;
+}
+
+#source-info {
+  display: flex;
+  align-self: flex-end;
+}
+
+.citation,
+.year {
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.button {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* .button:hover, */
+
+#loadQuote {
+  width: 200px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  align-self: center;
+  transition: 0.5s;
+  background-color: transparent;
+}
+.button:hover,
+#loadQuote:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.button::after {
+  background-color: transparent;
+}
+
+.button #loadQuote::after {
+  outline: none;
+}
+/* 
 
 .quote {
   font-size: 2.5rem;
@@ -26,7 +99,8 @@ body {
   margin: 0;
 }
 
-.quote:before, .quote:after {
+.quote:before,
+.quote:after {
   font-size: 3rem;
   line-height: 2.5rem;
   position: absolute;
@@ -34,14 +108,14 @@ body {
 
 .quote:before {
   content: "“";
-  top: .25em;
-  left: -.5em;
+  top: 0.25em;
+  left: -0.5em;
 }
 
 .quote:after {
   content: "”";
-  bottom: -.1em;
-  margin-left: .1em;
+  bottom: -0.1em;
+  margin-left: 0.1em;
   position: absolute;
 }
 
@@ -49,58 +123,29 @@ body {
   font-size: 1rem;
   letter-spacing: 0.05em;
   line-height: 1.1;
-  text-align: right;
-  margin-right: 4em;
 }
 
-.source:before {
-  content: "—";
-}
+
 
 .citation {
   font-style: italic;
 }
 
-.citation:before {
-  content: ", ";
-  font-style: normal;
-}
+
 
 .year:before {
   content: ", ";
   font-style: normal;
 }
 
-#loadQuote {
-  position: fixed;
-  width: 12em;
-  display: inline-block;
-  left: 50%;
-  margin-left: -6em;
-  bottom: 150px;
-  border-radius: 4px;
-  border: 2px solid #fff;
-  color: #fff;
-  background-color: #36b55c;
-  padding: 15px 0;
-  transition: .5s ;
-}
-#loadQuote:hover {
-  background-color: rgba(255,255,255,.25);
-}
+
 
 #loadQuote:focus {
   outline: none;
-}
+} */
 
-@media (min-width: 420px) {
-  .quote {
-    font-size: 4rem;
-  }
-  .quote:before, .quote:after {
-    font-size: 6rem;
-  }
-  .source {
-    font-size: 1.25rem;
+@media only screen and (max-width: 670px) {
+  .header {
+    font-size: 16px;
   }
 }
